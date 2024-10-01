@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advance Function</title>
+</head>
+<body>
+ 
+  <script>
+    let sum = function(a,b){
+      return a+b;
+    };
+
+    console.log(sum(4,5));
+    let newsum = sum;
+    console.log(newsum(4,5));
+
+    let sumThreeNumbers = function(a,b,c, sumTwoNumbers){
+      let sum1 = sumTwoNumbers(a,b);
+      return sumTwoNumbers(sum1,c);
+    }
+    console.log(sumThreeNumbers(4,5,6,sum));
+    console.log(sumThreeNumbers);
+    console.log(typeof sumThreeNumbers);
+
+  
+  </script>
+</body>
+</html>

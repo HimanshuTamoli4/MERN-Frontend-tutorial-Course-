@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Classes </title>
+<style>
+    .psuedo {
+        height: 25px;
+        width: 150px;
+        background-color: forestgreen;
+        border: 2px solid black;
+        border-radius: 10px;
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+
+     transition: all 1s ease-in-out 0s;    <!-- this is short trick to define all the properties together -->
+
+    }
+    .psuedo:hover {  
+        height: 35px;
+        width: 170px;
+        background-color: lightcoral;
+    }
+    .psuedo:active {
+        height: 35px;
+        width: 170px;
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <button class="psuedo">Learning Puedo </button>
+</body>
+</html> 

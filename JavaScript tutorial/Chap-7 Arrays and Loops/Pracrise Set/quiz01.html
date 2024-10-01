@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Practise Set 7</title>
+</head>
+<body>
+  <script>
+    // Question 1
+   let  nums = [5,6];
+    nums.unshift(4);
+    nums.push(7);
+    console.log(nums);
+
+    // Question 2
+    function getElementIndex(arr ,position){
+      return arr[position-1];
+    }
+
+    let arr = [1,2,3,4,5,6,7,8,9];
+    console.log(getElementIndex(arr,1));
+     
+    // Quesion 3
+      function arrCopy(arr){
+        return arr.slice(0, arr.length ); 
+      }
+
+     let arr1 = [4,5,6,7,8,9];
+      
+    console.log(arrCopy(arr1));
+    arr2 = arrCopy(arr1);
+    arr2[0] = null;
+    console.log(arr1);
+    console.log(arr2);
+
+    // Question 4 
+    function isPrime(num){
+      for(let i=2; i<num ; i++ ){
+        if(num % i === 0){
+            return false;
+        }
+      }
+      return true;
+    }
+
+    console.log(isPrime(5));
+    console.log(isPrime(8));
+
+    let num = 2;
+    let i = 0;
+    while(i<10){
+      if(isPrime(num)){
+        console.log(num);
+        i++;
+      }
+      num++;
+    }
+
+    // Question 5
+    let number= 2 ;
+    let j =0 ;
+    while(true){
+      if(isPrime(number)){
+        console.log(number);
+        j++;
+        if(j>=5){
+          break;
+        }
+      }
+      number++;
+    }
+
+    // Question 6
+    for(let i =10; i>0 ; i--){
+      console.log(i);
+    }
+    // 2nd way
+    for(let i =0; i<10 ; i++){
+      console.log(10-i);
+    }
+
+    // Question 7
+    let num1 = [1,-6,5,7,-98]
+    for(let i = 0; i<num1.length;i++){
+      if(num1[i]<0) {
+        continue;
+      }
+      console.log(num1[i]);
+    }
+
+    // Question 8
+    let array = ['Ishita' , 'Himanshu' ,'Singh' , 'Tamoli'];
+      let res = '';
+      for(let i=0; i<array.length;i++){
+        res += array[i] + " ";
+      }
+
+      console.log(res);
+
+      // 2nd way
+      console.log(array.join(" "));
+      console.log(array.join(", "));
+  </script>
+</body>
+</html>

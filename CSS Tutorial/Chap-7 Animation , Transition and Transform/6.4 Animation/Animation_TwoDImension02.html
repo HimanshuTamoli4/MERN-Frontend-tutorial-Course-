@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animations </title>
+    <style>
+        .box {
+            height: 50px;
+            width: 70px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            
+             animation-name: ghumakad;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.2s;
+            animation-iteration-count: 5; 
+
+            /* animation: ghumaka 2s ease-in-out 0.5s 5 alternate ; */ /* ==> short trick of writing animation  properties */
+            
+        }
+        #box1 {
+            animation-direction: normal;
+        }
+      
+     @keyframes ghumakad {
+        0% {left: 10px;} 
+        50% {top: 1500px;}
+        70% {bottom: 1500px;}
+        100% {left: 200px;}
+
+     }
+
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"> Animate1 </div>
+   >
+   
+</body>
+</html>

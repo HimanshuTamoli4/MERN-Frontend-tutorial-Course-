@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Function</title>
+</head>
+<body>
+  
+  <script>
+    function genrateRandomNum() {
+      let ran = Math.random();
+      let randomMove = ran*3;
+      return randomMove;
+    }
+    let res = genrateRandomNum();
+    console.log(res);
+    console.log(res); 
+    console.log(res); 
+
+    function drivestatus{
+      let age = 21 ;
+      if(age === undefined ){
+        return 'app avatar hai';
+      }
+      console.log('Checking Deiving status');
+      if(age>=18){
+        return 'You can drive';
+      }
+      else{
+        return 'you can not drive';
+      }
+
+    }
+
+    console.log(drivestatus());
+
+  </script>
+</body>
+</html>

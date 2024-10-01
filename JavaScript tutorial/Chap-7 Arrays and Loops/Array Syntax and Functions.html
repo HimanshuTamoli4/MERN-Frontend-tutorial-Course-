@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Array</title>
+</head>
+<body>
+  
+  <script>
+    let numbers = [1,4,3,5,6,9,10,4]
+    console.log(numbers); 
+    console.log(numbers[5]);
+
+    let arr = [1,true . null , 'Ishita'];
+    console.log(arr[3]);
+    console.log(typeof arr);
+    let obj = {
+      likes : 5684,
+    }
+    console.log(Array.isArray(obj));  
+    console.log(Array.isArray(arr));
+
+    console.log(numbers.length)
+    
+
+    let arr1 = [1,2,3];
+    console.log(arr1);  
+    arr1.push(4);
+    console.log(arr1);  
+   arr1.pop();
+   console.log(arr1);  
+   console.log('popped ' + arr1.pop());
+
+   arr1.unshift( 2003 ,18 , 30 , 2005 );
+   console.log(arr1);
+  
+   arr1.shift();
+   console.log(arr1);  
+    
+   let arr2 = [3,5,7,5];
+   console.log(arr2);
+   arr2.splice(0,2);
+   console.log(arr2);
+   
+   arr2.unshift( 2003 ,18 , 30 , 2005);
+   console.log(arr2.toString());
+
+   let arr3 = [56,46,41, 15,78,13,18,30];
+   arr3.sort();
+   console.log(arr3);
+   
+   let arr4 = [8,9,5,4];
+   arr4.sort();
+   console.log(arr4);
+
+   //console.log(arr4.Valueof());
+
+   let arr5 = arr4 ;
+   arr5[0]= 3;
+   console.log(arr4);
+
+   // Destructuring also works
+   let [a,b,c,d] = arr4;
+   console.log(a + " " + b + " " + c + " " + d)
+  </script>
+</body>
+</html>

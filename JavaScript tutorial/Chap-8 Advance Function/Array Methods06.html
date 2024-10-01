@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Functions</title>
+</head>
+<body>
+  
+  <script>
+    
+    //1. Filter Method
+     arr = [1,2,3,4,5,6,7,8,9];
+    let odds = arr.filter((num, index) => {
+      if (num % 2 === 1) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    console.log(odds);
+    // short method of doing it
+    let newOdds = arr.filter(
+      (num, index) => num % 2 === 1
+    );
+    console.log(newOdds);
+
+    let arr1 = [1,2,3,4,5];
+    let squares = arr1.map(num => num*num);
+    console.log(squares);
+
+    //2. Map Method
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Truthy and Falsy</title>
+</head>
+<body>
+  
+  <script>
+    let age; // false
+    age = 0 ; // false
+    age = ''; // false
+    age = false // false
+    age = null // false
+    age = 5/'ice cream' // => Nan = Not a Number =  considered as a false 
+    console.log(age);
+    if(age){
+      console.log('you have a valid age');
+    }
+    else{
+      console.log('app avatar hai')
+    }
+  </script>
+</body>
+</html>

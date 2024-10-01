@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advance Function</title>
+</head>
+<body>
+ 
+  <script>
+    //1. Set TimeOut
+    let alarm = () => 
+      console.log(`Good morning time  is ${new Date()}`) ;
+    
+    //let timerid = setTimeout(alarm,2500)
+    //console.log(`times id is ${timerid}`)
+  //   clearTimeout(timerid);
+
+  //1. Set Time Interval
+  let intervalID =  setInterval(alarm,1500);
+  //clearInterval(intervalID);
+  setTimeout(()=> clearInterval(intervalID) , 7500);
+  </script>
+</body>
+</html>

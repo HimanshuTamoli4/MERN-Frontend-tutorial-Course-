@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Object Shortcuts</title>
+</head>
+<body>
+  <script>
+    let product = {
+      Company : 'Mango',
+      Price: 865,
+      item_name : 'T-shirt',
+    
+    };
+    let  {Company,Price} = product;
+    console.log(Company);
+    console.log(Price);
+
+
+    let item = {
+      Company : 'Mango',
+      Price: 865,
+      item_name : 'T-shirt',
+      displayPrice() {
+        console.log(`Price of the item is ${this.Price}`)
+      }
+    };
+    item.displayPrice();
+  </script>
+</body>
+</html>

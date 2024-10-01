@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Practise set 4</title>
+</head>
+<body>
+  
+  <script>
+    // Question1
+    function oddEven(a){
+      if(a%2==0){
+        return `Number ${a} is even `;
+      }
+      else{
+        return `Number ${a} is even`;
+      }
+      
+    }
+
+    // 2nd method 
+    function isOdd(a){
+      rem = a%2;
+      let isOdd = rem === 1;
+      return isOdd;
+    }
+    console.log(oddEven(50));
+    console.log(isOdd(55));
+
+    // Question 2
+    function Larger(a,b){
+      if(a>b){
+        return a;
+      }
+      else{
+        return b;
+      }
+      
+    //  return a>b ? a : b; // ==> using termnary Operator
+
+    }
+    console.log(Larger(5,3));
+    console.log(Larger(58,89));
+
+    // Question 3
+    function toFaherenhiet(celsiusvalue){
+      return 9/5*celsiusvalue +32;
+    }
+    console.log(toFaherenhiet(38));
+    console.log(toFaherenhiet(100));
+
+
+  </script>
+</body>
+</html>

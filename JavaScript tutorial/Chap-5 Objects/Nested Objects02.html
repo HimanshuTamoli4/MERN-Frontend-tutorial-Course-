@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Object Inside A object </title>
+</head>
+<body>
+  
+  <script>  
+    let product = {
+      Company : 'Mango',
+      Price: 865,
+      item_name : 'T-shirt',
+      displayPrice: function() {
+        console.log(`Price of the item is ${this.Price}`)
+      }
+    };
+    product.displayPrice();
+  </script>
+</body>
+</html>

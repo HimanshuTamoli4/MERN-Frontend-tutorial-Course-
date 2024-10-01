@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tranform </title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+           
+          transition: all 0.5s ease-in-out;
+        }
+        #box1 {
+         
+            transform: rotate(45deg);
+        }
+
+        #box2:hover {
+   
+            transform: rotate(90deg);
+        }
+
+        #box3:hover {
+           
+            transform: rotatex(180deg);
+        }
+        #box4:hover {
+           
+            transform: rotatey(270deg);
+        }
+        #box5:hover {
+           
+            transform: rotatez(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"> Rotate1 </div>
+    <div id="box2" class="box">Rotate2</div>
+    <div id="box3" class="box">Rotate3</div>
+    <div id="box4" class="box">Rotate4</div>
+    <div id="box5" class="box">Rotate5</div>
+</body>
+</html>

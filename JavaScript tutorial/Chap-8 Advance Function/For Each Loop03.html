@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>For Each Loop</title>
+</head>
+<body>
+  <script>
+    let arr = [1,2,8,7,63,5,7,9];
+      arr.forEach(num =>console.log(num));
+
+      arr.forEach(function(num){
+        if(num ==63){
+          return;       //  In for each loop return work as continue
+        } 
+        console.log(`Visited: ${num}`);
+      })
+
+  </script>
+</body>
+</html>

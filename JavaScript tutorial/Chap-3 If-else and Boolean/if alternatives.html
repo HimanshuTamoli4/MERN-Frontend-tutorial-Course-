@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If Alternatives</title>
+</head>
+<body>
+  
+  <script>
+    //1. Ternary Operator
+    let age = 31;
+    let result =  age>18 ? 'Adult' : 'Kid';
+    console.log(result);
+
+    //2. Guard Operator
+    /*  let Saal = 0;
+      let FinalSaal = age || 18 ;
+      console.log(Saal);
+      console.log(FinalSaal)*/
+
+        //3. Guard Operator
+        let Saal = 0;
+        let FinalSaal = age ?? 18 ;
+        console.log(Saal);
+        console.log(FinalSaal)
+  </script>
+</body>
+</html>
